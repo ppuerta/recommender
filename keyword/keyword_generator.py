@@ -27,4 +27,4 @@ for row in data['product_name']:
     keywords.append(filtered_sentence)
 
 data["keyword"] = keywords
-data.to_csv('../data/dataset_keywords.csv')
+data.to_csv('../data/dataset_keywords.csv', index=False)

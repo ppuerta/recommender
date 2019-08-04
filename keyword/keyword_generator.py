@@ -12,7 +12,6 @@ __author__ = 'puertaballesteros.pedro@gmail.com (Pedro Puertas)'
 
 stop_words_en = set(stopwords.words('english'))
 stop_words_es = set(stopwords.words('spanish'))
-translator= Translator(from_lang='es', to_lang="en")
 data = pd.read_csv('../data/21B_tag_views_dataset.csv')
 keywords = []
 

@@ -1,4 +1,4 @@
-id,user_id,tag_id,product_name,keyword
+row,id,user_id,tag_id,product_name,keyword
 0,1,00000055a78bf6735c4a89358fab1de34104c3cb,e78de9dad70d230a096f0bbdc3e89b5cae04ba77,La Gar̤onne In Oro Rosa A Maglie/bianco,"['gar̤onne', 'oro', 'rosa', 'maglie/bianco']"
 1,2,00000055a78bf6735c4a89358fab1de34104c3cb,b9a521730141de9bc4fe8ebc9f33713411d0101a,Fishnet Eco Bag,"['fishnet', 'eco', 'bag']"
 2,3,00000055a78bf6735c4a89358fab1de34104c3cb,8378136c6dd0e03be859a210a0cee03955951fb1,Collarino Essentielle In Oro Interamente A Esagoni,"['collarino', 'essentielle', 'oro', 'interamente', 'esagoni']"

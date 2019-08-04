@@ -6,7 +6,6 @@ import pandas as pd
 from nltk.corpus import stopwords
 from nltk import word_tokenize
 import string
-from translate import Translator
 
 
 __author__ = 'puertaballesteros.pedro@gmail.com (Pedro Puertas)'
@@ -26,13 +25,7 @@ for row in data['product_name']:
     filtered_sentence = [w for w in filtered_sentence if not w in stop_words_en]
     # Delete punctuation
     filtered_sentence = [w for w in filtered_sentence if not w in string.punctuation]
-    # Translate to have english as unique keyword list
-    translated = []
-    for w in filtered_sentence:
-        word_en = translator.translate(w).lower()
-        translated.append(word_en)
-
-    keywords.append(translated)
+    keywords.append(filtered_sentence)
 
 data["keyword"] = keywords
 data.to_csv('../data/dataset_keywords.csv')

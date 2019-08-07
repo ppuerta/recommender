@@ -19,7 +19,8 @@ brew install docker
 #### Neo4j:
 ```
 docker pull neo4j
-docker run --publish=7474:7474 --publish=7687:7687 --env=NEO4J_AUTH=none --volume=$HOME/neo4j/data:/tmp/neo4j -v $HOME/neo4j/import:/var/lib/neo4j/import neo4j
+docker run --publish=7474:7474 --publish=7687:7687 --env=NEO4J_AUTH=none --volume=$HOME/neo4j/data:/tmp/neo4j -v $HOME/neo4j/import:/var/lib/neo4j/import -v $HOME/neo4j/plugins:/var/lib/neo4j/plugins neo4j
+cd $HOME/neo4j/plugins
 ```
 
 #### Python:
